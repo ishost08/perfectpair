@@ -1,0 +1,99 @@
+/* Iryna Shostsik
+	 02/04/2018
+	 Language used: CSS3
+	 Purpose: Makes many HTML elements work and provides styles for all of the pages
+	 Class.section: W18 CGS2829.0M1: Adv Web Site
+ 	 Assignment: Exercise 3 Planning Your Site
+ */
+
+/*This style sheet makes certain areas of the html work 
+ *and also helps me to edit other elements if I don't like the default*/
+
+/* Sets the heights for the document */
+body, html { height: 100%; }
+
+/* styles for the parallax classes */
+.parallax1, .parallax2 
+{
+    /* Full height */
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+   	/* Found this cool effect at W3 Schools */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Set the image and its size for first parallax */
+.parallax1 
+{
+    /* The image used */
+    background-image: url('images/parallax1.jpg');
+    min-height: 100%;
+}
+
+/* Set the image and its size for second parallax */
+.parallax2 
+{
+    /* The image used */
+    background-image: url('images/parallax2.jpg');
+    min-height: 100%;
+}
+/* I use this code to edit the welcome message on the homepage */
+.logoStripe 
+{
+	text-align: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    background-image: url('images/logo.jpg');
+    background-repeat: repeat-x;
+    background-size: contain;
+    position: relative;
+}
+/* Center and paint the font of the welcome message */
+body h1 
+{
+	text-align: center;
+	color:#800000;
+}   
+
+/* Turning the decor element on top of the Welcome words on the homepage
+ * and turning it to add to the bottom provides a nice symmetry */
+.rotate180 {transform: rotate(180deg);}
+
+/* Use this to empasize the pseudo company name */
+#brandName
+{
+	border: solid 1px white;
+	padding: 10px;
+}
+
+/* The following styles organize the Women and Men Style images on the page */
+/* I decided to try two different approaches to edit this and they both work fine */
+/* Here I'm organizing the images that are in figure tags */
+div figure 
+{ 
+	float: left;
+	padding: 7px;
+	margin: 0;
+}
+
+/* And here I'm organizing the other set of images by using a separate id statement for each */
+#imgMen1
+{
+	float: left;
+	padding: 10px;
+}
+#imgMen2
+{
+	float: right;
+	padding: 10px;
+}
+#imgMen3 { padding: 10px; }
+
+/* This class neatly centers the product name and price under the placeholder image */
+.link-style{ text-align: center; }
+
+/* Adds a bit of space between the placeholder images of the future profucts */
+table img { padding-bottom: 10px; }

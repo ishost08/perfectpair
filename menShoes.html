@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- Iryna Shostsik
+	 02/04/2018
+	 Language used: HTML5
+	 Additional plug ins: Bootswatch Open-Source style sheet for navigating the site
+	 Includes: styles.css
+	 Class.section: W18 CGS2829.0M1: Adv Web Site
+ 	 Assignment: Exercise 3 Planning Your Site
+ -->
+<html lang="en">
+	<head>
+		<!-- The Men's Collection page will only differ from women's by the product it sells for consistency. -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The name of the pseudo retailer -->
+		<title>The Perfect Pair: Men's Collection</title>
+		<!-- This is the CDN Bootswatch style sheet that is used for many elements on the website -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/lux/bootstrap.min.css"
+			  rel="stylesheet" integrity="sha384-XI0PIujkSZEzZ5m8WTEm+krRuIpfO+vHrEznaIrhTAkbrbIvfs11kzCqUarPR7yn"
+			  crossorigin="anonymous">
+		<!-- I created this stylesheed to edit my own and Bootswatch elements -->
+		<link rel="stylesheet" href="styles.css"/>
+	</head>
+	<body>
+		<div class="logoStripe"> </div>
+			<!-- This is the navigation menu all of the pages use. Implemented with Bootswatch -->		
+			<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  				<a class="navbar-brand" id="brandName" href="homepage.html">The Perfect Pair</a>
+  				<button class="navbar-toggler" type="button" data-toggle="collapse"
+  					   data-target="#navbarColor01" aria-controls="navbarColor01"
+  					   aria-expanded="false" aria-label="Toggle navigation">
+    			      <span class="navbar-toggler-icon"> </span>
+  				</button>
+  				<div class="collapse navbar-collapse" id="navbarColor01">
+    				<ul class="navbar-nav mr-auto">
+      					<li class="nav-item">
+        					<a class="nav-link" href="homepage.html">Home</a>
+      					</li>
+      					<li class="nav-item">
+        					<a class="nav-link" href="womenShoes.html">Women</a>
+      					</li>
+      					<li class="nav-item active">
+        					<a class="nav-link" href="menShoes.html">Men <span class="sr-only">(current)</span></a>
+      					</li>
+    				</ul>
+    				<form class="form-inline my-2 my-lg-0">
+      					<input class="form-control mr-sm-2" type="text" placeholder="Search">
+      					<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    				</form>
+  				</div>
+			</nav>
+		<!--Here I omit the thead, tfoot because I only use the table for layout representation,
+		    barely any data is present -->
+		<table class="table">
+  <tbody>
+    <tr>
+      <td>
+      	<a href="womenShoes.html">
+      		<img src="images/placeholder-2.jpg" width="400" alt="placeholder"/>
+      		<h5 class="link-style">Oxfords<br>$39.99</h5>
+      	</a> 
+      </td>
+      <td>
+      	<a href="womenShoes.html">
+      		<img src="images/placeholder-2.jpg" width="400" alt="placeholder"/>
+      		<h5 class="link-style">Oxfords<br>$39.99</h5>
+      	</a> 
+      </td>
+      <td>
+      	<a href="menShoes.html">
+      		<img src="images/placeholder-2.jpg" width="400" alt="placeholder"/>
+      		<h5 class="link-style">Oxfords<br>$39.99</h5>
+      	</a> 
+      </td>
+    </tr>  
+     <tr>
+      <td>
+      	<a href="menShoes.html">
+      		<img src="images/placeholder-2.jpg" width="400" alt="placeholder"/>
+      		<h5 class="link-style">Oxfords<br>$39.99</h5>
+      	</a> 
+      </td>
+      <td>
+      	<a href="menShoes.html">
+      		<img src="images/placeholder-2.jpg" width="400" alt="placeholder"/>
+      		<h5 class="link-style">Oxfords<br>$39.99</h5>
+      	</a> 
+      </td>
+      <td>
+      	<a href="menShoes.html">
+      		<img src="images/placeholder-2.jpg" width="400" alt="placeholder"/>
+      		<h5 class="link-style">Oxfords<br>$39.99</h5>
+      	</a> 
+      </td>
+    </tr>  
+  </tbody>
+</table> 
+	<!-- This is an element from Bootswatch that keeps track of the page numbers. -->
+	<div>
+  		<ul class="pagination">
+    		<li class="page-item disabled">
+      			<a class="page-link" href="menShoes.html">&laquo;</a>
+    		</li>
+    		<li class="page-item disabled">
+      			<a class="page-link" href="menShoes.html">1</a>
+    		</li>
+    		<li class="page-item active">
+      			<a class="page-link" href="menShoes.html">2</a>
+    		</li>
+  		</ul>
+	</div>
+</body>
+</html>
